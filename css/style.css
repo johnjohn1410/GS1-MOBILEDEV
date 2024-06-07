@@ -1,0 +1,198 @@
+
+
+header::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+.container-2 {
+    display: flex;
+    align-items: center; /* Isso alinhará verticalmente o bullet point com o texto */
+}
+
+.svg-1 {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.p-1{
+    margin-top: 0.5rem;
+    list-style-type: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: teal;
+    border-radius: 16px;
+
+}
+
+li {
+    float: left;
+}
+
+li a{
+    cursor:default;
+}
+
+li a, h3 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active 
+{background-color: #04AA6D;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+ul > svg{
+    width: 50px;
+    height: 50px;
+    color: white;
+    padding-left: 1rem;
+}
+
+.barco{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(140deg) brightness(106%) contrast(105%);
+    float: left;
+}
+.escolha{
+    padding-right: 1rem;
+}
+#cadastrar:hover {
+    background-color: rgb(2, 54, 54);
+    transition: ease-in 0.25s;
+    cursor:pointer
+}
+
+
+.form{
+display: block;
+width: 300px;
+gap: 1rem;
+align-items: center;
+margin: auto;
+width: 50%;
+padding: 10px;
+margin-bottom: 2rem;
+}
+#formulario{
+    z-index: 10;
+}
+
+input{
+    border: none;
+    color: whitesmoke;
+    transition: opacity .5s ease-in-out;
+    opacity: 0.6;
+    outline: 0ch;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(10, 167, 167);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+::placeholder{
+    color: white;
+}
+input[type=datetime-local]{
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus{
+    opacity: 1;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.3rem;
+    margin-top: 2rem;
+}
+
+.outline{
+    display: block;
+    background-color: rgb(206, 68, 68);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+}
+
+button{
+    background-color: #008080;
+    border: none;
+    color: white;
+    padding: 16px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 16px;
+}
+.card {
+    display: flex; /* Ativa o modelo de layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin-left: 1rem;
+}
+
+.border-info{
+    border-color: #008080;
+}
+
+#Viagens-feitas{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+}
+
+#pesquisa{
+    width: 300px;
+}
+#pesquisar{
+    width: 100px;
+}
